@@ -338,9 +338,9 @@ globalkeys = gears.table.join(
 
     -- Dmenu Launch
     awful.key({ modkey }, "space", function()
-            awful.util.spawn("dmenu_run")
+            awful.util.spawn("rofi -show drun")
         end,
-        { description = "Launch Dmenu", group = "config" }),
+        { description = "Launch ", group = "config" }),
     awful.key({ modkey }, "d", function()
             awful.spawn("microsoft-edge")
         end,
